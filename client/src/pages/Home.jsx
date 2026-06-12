@@ -412,7 +412,7 @@ const Home = () => {
                 />
               </div>
               <div style={{ flexGrow: 1 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
+                <div className="product-title-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
                   <span style={{ fontSize: '18px' }}>❤️</span>
                   <h3 style={{ fontSize: '22px', fontFamily: 'var(--font-heading)', color: 'var(--color-primary)' }}>Beetroot Powder</h3>
                 </div>
@@ -435,7 +435,7 @@ const Home = () => {
                 />
               </div>
               <div style={{ flexGrow: 1 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
+                <div className="product-title-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
                   <span style={{ fontSize: '18px' }}>🌿</span>
                   <h3 style={{ fontSize: '22px', fontFamily: 'var(--font-heading)', color: 'var(--color-primary)' }}>Moringa Powder</h3>
                 </div>
@@ -458,7 +458,7 @@ const Home = () => {
                 />
               </div>
               <div style={{ flexGrow: 1 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
+                <div className="product-title-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
                   <span style={{ fontSize: '18px' }}>🧅</span>
                   <h3 style={{ fontSize: '22px', fontFamily: 'var(--font-heading)', color: 'var(--color-primary)' }}>Onion Powder</h3>
                 </div>
@@ -481,7 +481,7 @@ const Home = () => {
                 />
               </div>
               <div style={{ flexGrow: 1 }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
+                <div className="product-title-wrapper" style={{ display: 'flex', alignItems: 'center', gap: '6px', marginBottom: '8px' }}>
                   <span style={{ fontSize: '18px' }}>🧄</span>
                   <h3 style={{ fontSize: '22px', fontFamily: 'var(--font-heading)', color: 'var(--color-primary)' }}>Garlic Powder</h3>
                 </div>
