@@ -64,11 +64,11 @@ const BulkEnquiry = () => {
 
     try {
       // Determine endpoint based on sample request checkbox
-      let url = 'http://localhost:5000/api/enquiries';
+      let url = 'http://localhost:5001/api/enquiries';
       let payload = { ...formData };
 
       if (formData.isSampleRequest) {
-        url = 'http://localhost:5000/api/samples';
+        url = 'http://localhost:5001/api/samples';
         payload = {
           name: formData.name,
           company: formData.company,

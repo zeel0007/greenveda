@@ -19,7 +19,7 @@ const AdminDashboard = () => {
     e.preventDefault();
     setLoginError('');
     try {
-      const response = await fetch('http://localhost:5000/api/admin/login', {
+      const response = await fetch('http://localhost:5001/api/admin/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, password })
@@ -61,9 +61,9 @@ const AdminDashboard = () => {
       const headers = { 'Authorization': `Bearer ${token}` };
 
       const [enqRes, sampRes, contRes] = await Promise.all([
-        fetch('http://localhost:5000/api/admin/enquiries', { headers }),
-        fetch('http://localhost:5000/api/admin/samples', { headers }),
-        fetch('http://localhost:5000/api/admin/contacts', { headers })
+        fetch('http://localhost:5001/api/admin/enquiries', { headers }),
+        fetch('http://localhost:5001/api/admin/samples', { headers }),
+        fetch('http://localhost:5001/api/admin/contacts', { headers })
       ]);
 
       if (enqRes.status === 401 || sampRes.status === 401 || contRes.status === 401) {
@@ -111,7 +111,7 @@ const AdminDashboard = () => {
   const handleUpdateStatus = async (type, id, newStatus, trackingNo = '') => {
     let endpointType = type === 'enquiries' ? 'enquiries' : type === 'samples' ? 'samples' : 'contacts';
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/${endpointType}/${id}`, {
+      const response = await fetch(`http://localhost:5001/api/admin/${endpointType}/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -139,7 +139,7 @@ const AdminDashboard = () => {
     if (!window.confirm('Are you sure you want to delete this entry?')) return;
     let endpointType = type === 'enquiries' ? 'enquiries' : type === 'samples' ? 'samples' : 'contacts';
     try {
-      const response = await fetch(`http://localhost:5000/api/admin/${endpointType}/${id}`, {
+      const response = await fetch(`http://localhost:5001/api/admin/${endpointType}/${id}`, {
         method: 'DELETE',
         headers: { 'Authorization': `Bearer ${token}` }
       });
