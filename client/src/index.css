@@ -543,3 +543,41 @@ button, input, textarea, select {
   pointer-events: none;
   z-index: 1;
 }
+
+/* Responsive Timeline & Hero Adjustments */
+.timeline-arrow {
+  display: inline-block;
+}
+.timeline-arrow::before {
+  content: "→";
+}
+
+@media (max-width: 1024px) {
+  .process-timeline {
+    justify-content: center !important;
+    gap: 16px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    justify-content: center !important;
+    padding-top: 100px !important;
+  }
+  .hero-content {
+    text-align: center !important;
+    margin: 0 auto !important;
+    padding: 0 16px !important;
+  }
+  .hero-buttons {
+    justify-content: center !important;
+  }
+  .process-timeline {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+  }
+  .timeline-arrow::before {
+    content: "↓" !important;
+  }
+}

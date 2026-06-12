@@ -20,7 +20,7 @@ const Home = () => {
       secondaryUrl: "/bulk-enquiry"
     },
     {
-      image: 'images/hero_onion_garlic.png',
+      image: 'images/rawgar.jpeg',
       headline: "From Farm to Global Markets",
       subheadline: "Supplying premium quality vegetable powders with consistent quality and complete traceability.",
       primaryBtn: "Explore Products",
@@ -29,7 +29,7 @@ const Home = () => {
       secondaryUrl: "/bulk-enquiry"
     },
     {
-      image: 'images/hero_moringa.png',
+      image: 'images/rawbeet.jpeg',
       headline: "Pure Ingredients. Trusted Supply.",
       subheadline: "Low moisture. Long shelf life. Export quality.",
       primaryBtn: "Explore Products",
@@ -82,7 +82,7 @@ const Home = () => {
 
   return (
     <div style={{ backgroundColor: 'var(--color-bg)', color: 'var(--color-dark)' }}>
-      
+
       {/* SECTION 1 — HERO CAROUSEL */}
       <div style={{ position: 'relative', height: '100vh', width: '100%', overflow: 'hidden', backgroundColor: 'var(--color-primary)' }}>
         {slides.map((slide, index) => (
@@ -125,7 +125,7 @@ const Home = () => {
             />
             {/* Content Container */}
             <div
-              className="container"
+              className="container hero-container"
               style={{
                 position: 'absolute',
                 top: 0,
@@ -139,7 +139,7 @@ const Home = () => {
                 paddingTop: '72px'
               }}
             >
-              <div style={{ maxWidth: '640px', color: 'var(--color-white)' }}>
+              <div className="hero-content" style={{ maxWidth: '640px', color: 'var(--color-white)' }}>
                 <span
                   style={{
                     display: 'inline-flex',
@@ -158,7 +158,7 @@ const Home = () => {
                 >
                   <Sparkles size={14} /> GreenVeda Premium Ingredients
                 </span>
-                
+
                 <h1
                   style={{
                     fontSize: 'clamp(40px, 6vw, 68px)',
@@ -174,7 +174,7 @@ const Home = () => {
                 >
                   {slide.headline}
                 </h1>
-                
+
                 <p
                   style={{
                     fontSize: 'clamp(16px, 2vw, 19px)',
@@ -190,8 +190,9 @@ const Home = () => {
                 >
                   {slide.subheadline}
                 </p>
-                
+
                 <div
+                  className="hero-buttons"
                   style={{
                     display: 'flex',
                     gap: '16px',
@@ -287,7 +288,7 @@ const Home = () => {
       <div className="section" style={{ backgroundColor: 'var(--color-white)', borderBottom: '1px solid var(--color-border)', padding: '80px 0' }}>
         <div className="container">
           <div className="grid-5" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '24px' }}>
-            
+
             <div className="card" style={{ textAlign: 'center', border: '1px solid var(--color-border)', padding: '36px 24px', borderRadius: '24px' }}>
               <div style={{ fontSize: '42px', fontWeight: 500, fontFamily: 'var(--font-heading)', color: 'var(--color-primary)', marginBottom: '8px' }}>
                 <StatCounter target={500} suffix="+" />
@@ -378,7 +379,7 @@ const Home = () => {
                   Nature Preserved Through Innovation
                 </h2>
                 <p style={{ color: 'var(--color-muted)', fontSize: '16px', lineHeight: 1.8, marginBottom: '36px' }}>
-                  GreenVeda transforms carefully selected vegetables into premium powders using controlled drying technology while preserving natural quality, taste and nutrition. 
+                  GreenVeda transforms carefully selected vegetables into premium powders using controlled drying technology while preserving natural quality, taste and nutrition.
                   <br /><br />
                   Our engineering systems monitor and regulate airflow, humidity, and heat to lock in natural antioxidants, dietary fibers, and flavors. This process yields products that boast near-zero clumping, extended shelf-life, and rich culinary utility for businesses.
                 </p>
@@ -400,7 +401,7 @@ const Home = () => {
           </div>
 
           <div className="grid-4" style={{ gap: '30px' }}>
-            
+
             {/* Beetroot Card */}
             <div className="card product-hover-card" style={{ display: 'flex', flexDirection: 'column', height: '100%', padding: '24px' }}>
               <div style={{ position: 'relative', height: '220px', overflow: 'hidden', borderRadius: '16px', marginBottom: '20px', backgroundColor: '#eaeaea' }}>
@@ -513,7 +514,7 @@ const Home = () => {
           </div>
 
           <div className="grid-3" style={{ gap: '30px' }}>
-            
+
             <div className="glass-card" style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
               <div style={{ padding: '12px', backgroundColor: 'var(--color-white)', borderRadius: '12px', border: '1px solid var(--color-border)', color: 'var(--color-primary)' }}>
                 <Leaf size={24} />
@@ -588,41 +589,41 @@ const Home = () => {
           </div>
 
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '20px', marginBottom: '60px' }} className="process-timeline">
-            
+
             <div style={{ textAlign: 'center', flex: 1, minWidth: '130px' }}>
               <div style={{ width: '64px', height: '64px', borderRadius: '50%', backgroundColor: 'var(--color-mint)', color: 'var(--color-primary)', display: 'inline-flex', alignItems: 'center', justifyContainer: 'center', justifyContent: 'center', fontSize: '20px', fontWeight: 600, marginBottom: '16px', border: '1px solid var(--color-border)' }}>1</div>
               <h4 style={{ fontSize: '16px', color: 'var(--color-primary)', fontWeight: 600 }}>Farm Sourcing</h4>
             </div>
 
-            <div style={{ color: 'var(--color-gold)', fontSize: '24px', fontWeight: 300, display: 'inline-block' }} className="timeline-arrow">↓</div>
+            <div className="timeline-arrow" style={{ color: 'var(--color-gold)', fontSize: '24px', fontWeight: 300 }}></div>
 
             <div style={{ textAlign: 'center', flex: 1, minWidth: '130px' }}>
               <div style={{ width: '64px', height: '64px', borderRadius: '50%', backgroundColor: 'var(--color-mint)', color: 'var(--color-primary)', display: 'inline-flex', alignItems: 'center', justifyContainer: 'center', justifyContent: 'center', fontSize: '20px', fontWeight: 600, marginBottom: '16px', border: '1px solid var(--color-border)' }}>2</div>
               <h4 style={{ fontSize: '16px', color: 'var(--color-primary)', fontWeight: 600 }}>Wash & Sort</h4>
             </div>
 
-            <div style={{ color: 'var(--color-gold)', fontSize: '24px', fontWeight: 300, display: 'inline-block' }} className="timeline-arrow">↓</div>
+            <div className="timeline-arrow" style={{ color: 'var(--color-gold)', fontSize: '24px', fontWeight: 300 }}></div>
 
             <div style={{ textAlign: 'center', flex: 1, minWidth: '130px' }}>
               <div style={{ width: '64px', height: '64px', borderRadius: '50%', backgroundColor: 'var(--color-mint)', color: 'var(--color-primary)', display: 'inline-flex', alignItems: 'center', justifyContainer: 'center', justifyContent: 'center', fontSize: '20px', fontWeight: 600, marginBottom: '16px', border: '1px solid var(--color-border)' }}>3</div>
               <h4 style={{ fontSize: '16px', color: 'var(--color-primary)', fontWeight: 600 }}>Precision Dry</h4>
             </div>
 
-            <div style={{ color: 'var(--color-gold)', fontSize: '24px', fontWeight: 300, display: 'inline-block' }} className="timeline-arrow">↓</div>
+            <div className="timeline-arrow" style={{ color: 'var(--color-gold)', fontSize: '24px', fontWeight: 300 }}></div>
 
             <div style={{ textAlign: 'center', flex: 1, minWidth: '130px' }}>
               <div style={{ width: '64px', height: '64px', borderRadius: '50%', backgroundColor: 'var(--color-mint)', color: 'var(--color-primary)', display: 'inline-flex', alignItems: 'center', justifyContainer: 'center', justifyContent: 'center', fontSize: '20px', fontWeight: 600, marginBottom: '16px', border: '1px solid var(--color-border)' }}>4</div>
               <h4 style={{ fontSize: '16px', color: 'var(--color-primary)', fontWeight: 600 }}>Grind & Sieve</h4>
             </div>
 
-            <div style={{ color: 'var(--color-gold)', fontSize: '24px', fontWeight: 300, display: 'inline-block' }} className="timeline-arrow">↓</div>
+            <div className="timeline-arrow" style={{ color: 'var(--color-gold)', fontSize: '24px', fontWeight: 300 }}></div>
 
             <div style={{ textAlign: 'center', flex: 1, minWidth: '130px' }}>
               <div style={{ width: '64px', height: '64px', borderRadius: '50%', backgroundColor: 'var(--color-mint)', color: 'var(--color-primary)', display: 'inline-flex', alignItems: 'center', justifyContainer: 'center', justifyContent: 'center', fontSize: '20px', fontWeight: 600, marginBottom: '16px', border: '1px solid var(--color-border)' }}>5</div>
               <h4 style={{ fontSize: '16px', color: 'var(--color-primary)', fontWeight: 600 }}>Quality Test</h4>
             </div>
 
-            <div style={{ color: 'var(--color-gold)', fontSize: '24px', fontWeight: 300, display: 'inline-block' }} className="timeline-arrow">↓</div>
+            <div className="timeline-arrow" style={{ color: 'var(--color-gold)', fontSize: '24px', fontWeight: 300 }}></div>
 
             <div style={{ textAlign: 'center', flex: 1, minWidth: '130px' }}>
               <div style={{ width: '64px', height: '64px', borderRadius: '50%', backgroundColor: 'var(--color-mint)', color: 'var(--color-primary)', display: 'inline-flex', alignItems: 'center', justifyContainer: 'center', justifyContent: 'center', fontSize: '20px', fontWeight: 600, marginBottom: '16px', border: '1px solid var(--color-border)' }}>6</div>
