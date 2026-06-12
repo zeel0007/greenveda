@@ -400,11 +400,11 @@ const Home = () => {
             <h2 className="section-title" style={{ fontSize: '44px' }}>Luxury Organic Botanicals</h2>
           </div>
 
-          <div className="grid-4" style={{ gap: '30px' }}>
+          <div className="grid-4 home-product-grid" style={{ gap: '30px' }}>
 
             {/* Beetroot Card */}
             <div className="card product-hover-card" style={{ display: 'flex', flexDirection: 'column', height: '100%', padding: '24px' }}>
-              <div style={{ position: 'relative', height: '220px', overflow: 'hidden', borderRadius: '16px', marginBottom: '20px', backgroundColor: '#eaeaea' }}>
+              <div className="product-image-container" style={{ position: 'relative', height: '220px', overflow: 'hidden', borderRadius: '16px', marginBottom: '20px', backgroundColor: '#eaeaea' }}>
                 <img
                   src="images/product_beetroot.png"
                   alt="Beetroot Powder"
@@ -427,7 +427,7 @@ const Home = () => {
 
             {/* Moringa Card */}
             <div className="card product-hover-card" style={{ display: 'flex', flexDirection: 'column', height: '100%', padding: '24px' }}>
-              <div style={{ position: 'relative', height: '220px', overflow: 'hidden', borderRadius: '16px', marginBottom: '20px', backgroundColor: '#eaeaea' }}>
+              <div className="product-image-container" style={{ position: 'relative', height: '220px', overflow: 'hidden', borderRadius: '16px', marginBottom: '20px', backgroundColor: '#eaeaea' }}>
                 <img
                   src="images/hero_moringa.png"
                   alt="Moringa Powder"
@@ -450,7 +450,7 @@ const Home = () => {
 
             {/* Onion Card */}
             <div className="card product-hover-card" style={{ display: 'flex', flexDirection: 'column', height: '100%', padding: '24px' }}>
-              <div style={{ position: 'relative', height: '220px', overflow: 'hidden', borderRadius: '16px', marginBottom: '20px', backgroundColor: '#eaeaea' }}>
+              <div className="product-image-container" style={{ position: 'relative', height: '220px', overflow: 'hidden', borderRadius: '16px', marginBottom: '20px', backgroundColor: '#eaeaea' }}>
                 <img
                   src="images/product_onion.png"
                   alt="Onion Powder"
@@ -473,7 +473,7 @@ const Home = () => {
 
             {/* Garlic Card */}
             <div className="card product-hover-card" style={{ display: 'flex', flexDirection: 'column', height: '100%', padding: '24px' }}>
-              <div style={{ position: 'relative', height: '220px', overflow: 'hidden', borderRadius: '16px', marginBottom: '20px', backgroundColor: '#eaeaea' }}>
+              <div className="product-image-container" style={{ position: 'relative', height: '220px', overflow: 'hidden', borderRadius: '16px', marginBottom: '20px', backgroundColor: '#eaeaea' }}>
                 <img
                   src="images/hero_onion_garlic.png"
                   alt="Garlic Powder"
