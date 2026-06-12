@@ -371,84 +371,44 @@ const About = () => {
             <FadeInSection>
               <div className="card" style={{
                 textAlign: 'center',
-                padding: '40px 24px',
+                padding: '40px 32px',
                 borderRadius: '24px',
                 backgroundColor: 'var(--color-white)',
                 border: '1px solid var(--color-border)',
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between'
+                height: '100%'
               }}>
-                <div>
-                  <div style={{
-                    width: '160px',
-                    height: '160px',
-                    borderRadius: '50%',
-                    overflow: 'hidden',
-                    margin: '0 auto 24px auto',
-                    border: '2px solid var(--color-gold)',
-                    boxShadow: 'var(--shadow-md)'
-                  }}>
-                    <img
-                      src="images/zeel_pansuriya.jpeg"
-                      alt="Zeel Pansuriya"
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.28)', transformOrigin: 'center' }}
-                    />
-                  </div>
-                  <h3 style={{ fontSize: '24px', fontFamily: 'var(--font-heading)', color: 'var(--color-primary)', marginBottom: '6px' }}>
-                    Zeel Pansuriya
-                  </h3>
-                  <p style={{
-                    fontSize: '12px',
-                    color: 'var(--color-accent)',
-                    fontWeight: 600,
-                    letterSpacing: '1.5px',
-                    textTransform: 'uppercase',
-                    marginBottom: '20px',
-                    fontFamily: 'var(--font-body)'
-                  }}>
-                    CEO & Founder
-                  </p>
-                  <p style={{ color: 'var(--color-muted)', fontSize: '14px', lineHeight: 1.6, margin: 0 }}>
-                    Leading GreenVeda with a vision to build a trusted premium ingredient brand through operational excellence, strategic growth, and long-term partnerships with customers and farmers.
-                  </p>
-                </div>
-
-                <div style={{ 
-                  textAlign: 'left', 
-                  borderTop: '1px solid var(--color-border)', 
-                  paddingTop: '16px',
-                  marginTop: '20px'
+                <div style={{
+                  width: '160px',
+                  height: '160px',
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                  margin: '0 auto 24px auto',
+                  border: '2px solid var(--color-gold)',
+                  boxShadow: 'var(--shadow-md)'
                 }}>
-                  <span style={{ 
-                    fontSize: '10px', 
-                    fontWeight: 700, 
-                    color: 'var(--color-accent)', 
-                    textTransform: 'uppercase', 
-                    letterSpacing: '1px',
-                    display: 'block',
-                    marginBottom: '10px',
-                    textAlign: 'center'
-                  }}>
-                    Core Focus
-                  </span>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', justifyContent: 'center' }}>
-                    {['Strategic Growth', 'B2B Relations', 'Operations', 'Supply Chain'].map((resp, i) => (
-                      <span key={i} style={{
-                        fontSize: '10px',
-                        backgroundColor: '#F8F5F0',
-                        color: 'var(--color-primary)',
-                        padding: '4px 10px',
-                        borderRadius: '20px',
-                        fontWeight: 500,
-                        border: '1px solid var(--color-border)'
-                      }}>
-                        {resp}
-                      </span>
-                    ))}
-                  </div>
+                  <img
+                    src="images/zeel_bhanderi.png"
+                    alt="Zeel Bhanderi"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.28)', transformOrigin: 'center' }}
+                  />
                 </div>
+                <h3 style={{ fontSize: '26px', fontFamily: 'var(--font-heading)', color: 'var(--color-primary)', marginBottom: '6px' }}>
+                  Zeel Bhanderi
+                </h3>
+                <p style={{
+                  fontSize: '13px',
+                  color: 'var(--color-accent)',
+                  fontWeight: 600,
+                  letterSpacing: '1.5px',
+                  textTransform: 'uppercase',
+                  marginBottom: '20px',
+                  fontFamily: 'var(--font-body)'
+                }}>
+                  CTO & Creative Director
+                </p>
+                <p style={{ color: 'var(--color-muted)', fontSize: '14.5px', lineHeight: 1.6, margin: 0 }}>
+                  Leading GreenVeda's brand identity, packaging design, digital innovation, website experience, visual storytelling, and marketing strategy to create a globally recognizable premium brand.
+                </p>
               </div>
             </FadeInSection>
 
@@ -456,84 +416,44 @@ const About = () => {
             <FadeInSection>
               <div className="card" style={{
                 textAlign: 'center',
-                padding: '40px 24px',
+                padding: '40px 32px',
                 borderRadius: '24px',
                 backgroundColor: 'var(--color-white)',
                 border: '1px solid var(--color-border)',
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between'
+                height: '100%'
               }}>
-                <div>
-                  <div style={{
-                    width: '160px',
-                    height: '160px',
-                    borderRadius: '50%',
-                    overflow: 'hidden',
-                    margin: '0 auto 24px auto',
-                    border: '2px solid var(--color-gold)',
-                    boxShadow: 'var(--shadow-md)'
-                  }}>
-                    <img
-                      src="images/zeel_bhanderi.png"
-                      alt="Zeel Bhanderi"
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.28)', transformOrigin: 'center' }}
-                    />
-                  </div>
-                  <h3 style={{ fontSize: '24px', fontFamily: 'var(--font-heading)', color: 'var(--color-primary)', marginBottom: '6px' }}>
-                    Zeel Bhanderi
-                  </h3>
-                  <p style={{
-                    fontSize: '12px',
-                    color: 'var(--color-accent)',
-                    fontWeight: 600,
-                    letterSpacing: '1.5px',
-                    textTransform: 'uppercase',
-                    marginBottom: '20px',
-                    fontFamily: 'var(--font-body)'
-                  }}>
-                    CTO & Creative Director
-                  </p>
-                  <p style={{ color: 'var(--color-muted)', fontSize: '14px', lineHeight: 1.6, margin: 0 }}>
-                    Leading GreenVeda's brand identity, packaging design, digital innovation, website experience, visual storytelling, and marketing strategy to create a globally recognizable premium brand.
-                  </p>
-                </div>
-
-                <div style={{ 
-                  textAlign: 'left', 
-                  borderTop: '1px solid var(--color-border)', 
-                  paddingTop: '16px',
-                  marginTop: '20px'
+                <div style={{
+                  width: '160px',
+                  height: '160px',
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                  margin: '0 auto 24px auto',
+                  border: '2px solid var(--color-gold)',
+                  boxShadow: 'var(--shadow-md)'
                 }}>
-                  <span style={{ 
-                    fontSize: '10px', 
-                    fontWeight: 700, 
-                    color: 'var(--color-accent)', 
-                    textTransform: 'uppercase', 
-                    letterSpacing: '1px',
-                    display: 'block',
-                    marginBottom: '10px',
-                    textAlign: 'center'
-                  }}>
-                    Core Focus
-                  </span>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', justifyContent: 'center' }}>
-                    {['Brand Identity', 'UI / UX Design', 'Marketing', 'Digital Strategy'].map((resp, i) => (
-                      <span key={i} style={{
-                        fontSize: '10px',
-                        backgroundColor: '#F8F5F0',
-                        color: 'var(--color-primary)',
-                        padding: '4px 10px',
-                        borderRadius: '20px',
-                        fontWeight: 500,
-                        border: '1px solid var(--color-border)'
-                      }}>
-                        {resp}
-                      </span>
-                    ))}
-                  </div>
+                  <img
+                    src="images/zeel_pansuriya.jpeg"
+                    alt="Zeel Pansuriya"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.28)', transformOrigin: 'center' }}
+                  />
                 </div>
+                <h3 style={{ fontSize: '26px', fontFamily: 'var(--font-heading)', color: 'var(--color-primary)', marginBottom: '6px' }}>
+                  Zeel Pansuriya
+                </h3>
+                <p style={{
+                  fontSize: '13px',
+                  color: 'var(--color-accent)',
+                  fontWeight: 600,
+                  letterSpacing: '1.5px',
+                  textTransform: 'uppercase',
+                  marginBottom: '20px',
+                  fontFamily: 'var(--font-body)'
+                }}>
+                  CEO & Founder
+                </p>
+                <p style={{ color: 'var(--color-muted)', fontSize: '14.5px', lineHeight: 1.6, margin: 0 }}>
+                  Leading GreenVeda with a vision to build a trusted premium ingredient brand through operational excellence, strategic growth, and long-term partnerships with customers and farmers.
+                </p>
               </div>
             </FadeInSection>
 
@@ -541,84 +461,44 @@ const About = () => {
             <FadeInSection>
               <div className="card" style={{
                 textAlign: 'center',
-                padding: '40px 24px',
+                padding: '40px 32px',
                 borderRadius: '24px',
                 backgroundColor: 'var(--color-white)',
                 border: '1px solid var(--color-border)',
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between'
+                height: '100%'
               }}>
-                <div>
-                  <div style={{
-                    width: '160px',
-                    height: '160px',
-                    borderRadius: '50%',
-                    overflow: 'hidden',
-                    margin: '0 auto 24px auto',
-                    border: '2px solid var(--color-gold)',
-                    boxShadow: 'var(--shadow-md)'
-                  }}>
-                    <img
-                      src="images/yash.png"
-                      alt="Yash Pansuriya"
-                      style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.28)', transformOrigin: 'center' }}
-                    />
-                  </div>
-                  <h3 style={{ fontSize: '24px', fontFamily: 'var(--font-heading)', color: 'var(--color-primary)', marginBottom: '6px' }}>
-                    Yash Pansuriya
-                  </h3>
-                  <p style={{
-                    fontSize: '12px',
-                    color: 'var(--color-accent)',
-                    fontWeight: 600,
-                    letterSpacing: '1.5px',
-                    textTransform: 'uppercase',
-                    marginBottom: '20px',
-                    fontFamily: 'var(--font-body)'
-                  }}>
-                    Head of QA & Laboratory
-                  </p>
-                  <p style={{ color: 'var(--color-muted)', fontSize: '14px', lineHeight: 1.6, margin: 0 }}>
-                    Oversees quality assurance, laboratory testing, and product consistency. Armed with chemical engineering expertise, he ensures every batch meets rigorous standards for purity, moisture control, and safety.
-                  </p>
-                </div>
-
-                <div style={{ 
-                  textAlign: 'left', 
-                  borderTop: '1px solid var(--color-border)', 
-                  paddingTop: '16px',
-                  marginTop: '20px'
+                <div style={{
+                  width: '160px',
+                  height: '160px',
+                  borderRadius: '50%',
+                  overflow: 'hidden',
+                  margin: '0 auto 24px auto',
+                  border: '2px solid var(--color-gold)',
+                  boxShadow: 'var(--shadow-md)'
                 }}>
-                  <span style={{ 
-                    fontSize: '10px', 
-                    fontWeight: 700, 
-                    color: 'var(--color-accent)', 
-                    textTransform: 'uppercase', 
-                    letterSpacing: '1px',
-                    display: 'block',
-                    marginBottom: '10px',
-                    textAlign: 'center'
-                  }}>
-                    Core Focus
-                  </span>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', justifyContent: 'center' }}>
-                    {['Lab Testing', 'QA / QC', 'Moisture & Particle', 'Food Safety', 'Compliance'].map((resp, i) => (
-                      <span key={i} style={{
-                        fontSize: '10px',
-                        backgroundColor: '#F8F5F0',
-                        color: 'var(--color-primary)',
-                        padding: '4px 10px',
-                        borderRadius: '20px',
-                        fontWeight: 500,
-                        border: '1px solid var(--color-border)'
-                      }}>
-                        {resp}
-                      </span>
-                    ))}
-                  </div>
+                  <img
+                    src="images/yash.png"
+                    alt="Yash Pansuriya"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scale(1.28)', transformOrigin: 'center' }}
+                  />
                 </div>
+                <h3 style={{ fontSize: '26px', fontFamily: 'var(--font-heading)', color: 'var(--color-primary)', marginBottom: '6px' }}>
+                  Yash Pansuriya
+                </h3>
+                <p style={{
+                  fontSize: '13px',
+                  color: 'var(--color-accent)',
+                  fontWeight: 600,
+                  letterSpacing: '1.5px',
+                  textTransform: 'uppercase',
+                  marginBottom: '20px',
+                  fontFamily: 'var(--font-body)'
+                }}>
+                  Head of QA & Laboratory
+                </p>
+                <p style={{ color: 'var(--color-muted)', fontSize: '14.5px', lineHeight: 1.6, margin: 0 }}>
+                  Oversees quality assurance, laboratory testing, and product consistency. Armed with chemical engineering expertise, he ensures every batch meets rigorous standards for purity, moisture control, and safety.
+                </p>
               </div>
             </FadeInSection>
           </div>
